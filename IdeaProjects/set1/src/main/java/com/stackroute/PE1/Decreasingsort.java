@@ -8,7 +8,7 @@ import java.util.Scanner;
 
     public class Decreasingsort {
         public int sumOfNumbers(int input) {
-            if (input <0) {
+            if (input >0) {
                 int[] arr = new int[20];
                 int s, i;
                 /*putting the integer into the array*/

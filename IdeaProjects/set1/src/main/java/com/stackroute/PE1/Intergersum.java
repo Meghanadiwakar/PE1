@@ -6,11 +6,11 @@
 package com.stackroute.PE1;
 
 import java.util.Scanner;
+//this method will read integers an add them//
+    public class Intergersum {
 
-    public class Intergersum
-    {
         int sum=0;
-        int total(int number){
+      public  int total(int number){
             sum = sum + number;
             return sum;
         }

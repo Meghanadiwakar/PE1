@@ -8,34 +8,21 @@ package com.stackroute.PE1;
 import java.util.Scanner;
 public class Tomnjerry {
 
-    String func(int n)
-    {
-        if (n % 2 ==0)
-        {
-            if ((n >= 20) && (n <= 30)) /*checking for the condition*/
-            {
-                return "Jerry";
+    String func(int n) {
+        if (n > 0) {
+            if (n % 2 == 0) {
+                if ((n >= 20) && (n <= 30)) /*checking for the condition*/ {
+                    return "Jerry";
+                }
+            }
+
+            if (n >= 20 && n <= 30) {
+                return "Tom";
+            } else {
+                return "Condition is not satisfied";
             }
         }
-
-        if (n>=20 && n<=30)
-        {
-            return "Tom";
-        }
-        else {
-            return "Condition is not satisfied";
-        }
-
-    }
-    public static void main(String[] args)
-    {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input a number: ");
-        int n;
-        n = in.nextInt();
-        Tomnjerry obj=new Tomnjerry();
-        System.out.println(obj.func(n));
-
-
+        return null;
     }
 }
+
