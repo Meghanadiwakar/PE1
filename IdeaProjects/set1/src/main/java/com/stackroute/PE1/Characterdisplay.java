@@ -7,7 +7,7 @@ package com.stackroute.PE1;
 
 public class Characterdisplay {
 
-
+//this method checks whether the entered input is digit or not//
     public String letterndigit(char h){
 
         if( h >=65 && h <= 90 )

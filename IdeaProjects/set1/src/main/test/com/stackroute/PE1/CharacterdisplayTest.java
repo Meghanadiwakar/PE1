@@ -26,7 +26,7 @@ public class CharacterdisplayTest {
         obj = null;
 
     }
-
+//this tests whether entered input is a digit//
     @Test
     public void checkdigitsuccess() {
         String actualstr = obj.letterndigit('4');
@@ -35,11 +35,21 @@ public class CharacterdisplayTest {
 
     }
 
+    //this tests whether entered input is a character//
     @Test
-    public void checksymbolsuccess() {
+    public void checkcharactersuccess() {
         String actualstr = obj.letterndigit('a');
         String expectedstr = "The entered character is a small Letter";
         Assert.assertEquals(actualstr, expectedstr);
 
+    }
+
+
+    //this tests whether entered input is a not a digit//
+    @Test
+    public void checkdigitfailure() {
+        String actualstr = obj.letterndigit('a');
+        String expectedstr = "The entered character is a Digit";
+        Assert.assertNotEquals(actualstr, expectedstr);
     }
 }
