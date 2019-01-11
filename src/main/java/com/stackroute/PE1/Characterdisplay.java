@@ -1,8 +1,13 @@
-package com.set1;
+/*Write a program that takes a character from the user/
+*as input and determines whether the character entered is a capital letter/
+* , a small case letter, a digit or a special symbol and display appropriately.
+ */
+
+package com.stackroute.PE1;
 
 public class Characterdisplay {
 
-
+//this method checks whether the entered input is digit or not//
     public String letterndigit(char h){
 
         if( h >=65 && h <= 90 )
